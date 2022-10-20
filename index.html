@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <title>image editor</title>
+</head>
+<body>
+  <div class="image-editor">
+    <div class="img">
+      <div class="img-box">
+        <img alt="">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="upload">
+        <label for="upload">upload</label>
+        <input type="file" id="upload">
+      </div>
+    </div>
+    <div class="filter">
+      <ul>
+        <li>
+          <div>
+            <label for="saturate">Saturate</label>
+            <span id="no-saturate"></span>
+          </div>
+          <input class="form-range" type="range" id="saturate" min="0" max="200" value="100">
+          <span class="runnable-track"></span>
+          <span class="progress" id="saturate-progress"></span>
+        </li>
+        <li>
+          <div>
+            <label for="contrast">Contrast</label>
+            <span id="no-contrast"></span>
+          </div>
+          <input class="form-range" type="range" id="contrast" min="0" max="200" value="100">
+          <span class="runnable-track"></span>
+          <span class="progress" id="contrast-progress"></span>
+        </li>
+        <li>
+          <div>
+            <label for="brightness">Brightness</label>
+            <span id="no-brightness"></span>
+          </div>
+          <input class="form-range" type="range" id="brightness" min="0" max="200" value="100">
+          <span class="runnable-track"></span>
+          <span class="progress" id="brightness-progress"></span>
+        </li>
+        <li>
+          <div>
+            <label for="sepia">Sepia</label>
+            <span id="no-sepia"></span>
+          </div>
+          <input class="form-range" type="range" id="sepia" min="0" max="200" value="0">
+          <span class="runnable-track"></span>
+          <span class="progress" id="sepia-progress"></span>
+        </li>
+        <li>
+          <div>
+            <label for="grayscale">Grayscale</label>
+            <span id="no-grayscale"></span>
+          </div>
+          <input class="form-range" type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+          <span class="runnable-track"></span>
+          <span class="progress" id="grayscale-progress"></span>
+        </li>
+        <li>
+          <div>
+            <label for="blur">Blur</label>
+            <span id="no-blur"></span>
+          </div>
+          <input class="form-range" type="range" id="blur" min="0" max="10" value="0">
+          <span class="runnable-track"></span>
+          <span class="progress" id="blur-progress"></span>
+        </li>
+        <li>
+          <div>
+            <label for="hue-rotate">Hue Rotate</label>
+            <span id="no-hue-rotate"></span>
+          </div>
+          <input class="form-range" type="range" id="hue-rotate" min="0" max="350" value="0">
+          <span class="runnable-track"></span>
+          <span class="progress" id="hue-rotate-progress"></span>
+        </li>
+        <li>
+          <a download="image" id="download">Download</a>
+          <span id="rest">Rest</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/jquery-main-v3.6.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- <script src="dist/main.js"></script> -->
+</body>
+</html>
