@@ -1101,7 +1101,7 @@
   const SWIPE_THRESHOLD = 40;
   const Default$a = {
     interval: 5000,
-    keyboard: true,
+    keyboard: true,=
     slide: false,
     pause: 'hover',
     wrap: true,
@@ -1961,7 +1961,6 @@ upload.onchange = () => {
   download.style.display = "block";
   canvas.style.display = "block";
   rest.style.display = "block";
-  img.style.display = "block";
   let file = new FileReader();
   file.readAsDataURL(upload.files[0]);
   file.onload = () => {
