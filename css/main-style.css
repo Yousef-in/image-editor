@@ -24,7 +24,6 @@ body{
   align-items: center;
   margin: auto;
   width: 83%;
-  height: 100%;
 }
 .image-editor .img .img-box{
   max-width: 100%;
@@ -109,6 +108,7 @@ body{
 @media screen and (max-width: 660px) {
   .image-editor{
     grid-template-columns: 1fr;
+    width: 95vw;
   }
   .upload label{
     font-size: 15px;

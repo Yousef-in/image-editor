@@ -15,7 +15,7 @@ const ctx = canvas.getContext("2d");
 
 window.onload = progress();
 
-rest.onclick = () => {
+function restValue() {
   "use stric";
   saturate.value = 100;
   contrast.value = 100;
@@ -39,10 +39,10 @@ rest.onclick = () => {
 
 upload.onchange = () => {
   progress();
+  restValue()
   download.style.display = "block";
   canvas.style.display = "block";
   rest.style.display = "block";
-  img.style.display = "block";
   let file = new FileReader();
   file.readAsDataURL(upload.files[0]);
   file.onload = () => {

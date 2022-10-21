@@ -1934,7 +1934,7 @@ const ctx = canvas.getContext("2d");
 
 window.onload = progress();
 
-rest.onclick = () => {
+function restValue() {
   "use stric";
   saturate.value = 100;
   contrast.value = 100;
@@ -1958,6 +1958,7 @@ rest.onclick = () => {
 
 upload.onchange = () => {
   progress();
+  restValue()
   download.style.display = "block";
   canvas.style.display = "block";
   rest.style.display = "block";
@@ -2024,6 +2025,8 @@ function progress() {
   document.getElementById("no-blur").innerHTML = `${blur.value}`;
   document.getElementById("no-hue-rotate").innerHTML = `${hueRotate.value}`;
 }
+
+
 
 // my projct
 
